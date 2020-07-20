@@ -1,3 +1,5 @@
+from math import acos, cos, sin, radians
+
 def binarySearch (arr, l, r, x):
     try:
         # Check base case
@@ -27,3 +29,24 @@ def binarySearch (arr, l, r, x):
             return -1
     except:
         print(f"this is the problem: {mid}")
+
+def stringSort(arr):
+    for item in arr:
+        item = str(item)
+        arr.sort()
+        return 0
+
+def dist_func(x1, y1, x2, y2):
+    #d = r * arccos((siny1 * siny2) + (cosy1 * cosy2 * cosΔx))
+    r = 6378.137
+
+    x1 = radians(x1)
+    y1 = radians(y1)
+    x2 = radians(x2)
+    y2 = radians(y2)
+
+    dy=y2-y1
+
+    dist = r * acos((sin(x1)*sin(x2)) + (cos(x1)*cos(x2)*cos(dy)))
+
+    return dist
