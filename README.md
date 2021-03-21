@@ -5,7 +5,7 @@
 ## TO DO
 
 1. Manage Data(follow [this](https://fastapi.tiangolo.com/tutorial/sql-databases/))
-  - create PostgreSQL DB for airports, routes and flights
+  - create PostgreSQL DB for airports and flights
     * models.py
     * database.py
     * schema.py

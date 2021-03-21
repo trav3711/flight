@@ -4,4 +4,4 @@ requests
 fastapi
 uvicorn[standard]
 sqlalchemy
-alembic
+psycopg2-binary
