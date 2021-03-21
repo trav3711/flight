@@ -1,3 +1,7 @@
 numpy
 pandas
 requests
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
