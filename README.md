@@ -4,16 +4,9 @@
 
 ## TO DO
 
-1. Manage Data(follow [this](https://fastapi.tiangolo.com/tutorial/sql-databases/))
-  - create PostgreSQL DB for airports and flights
-    * models.py
-    * database.py
-    * schema.py
-
-2. Make it deployable
-
-  - migrate to FastAPI with HTML frontend
+  - create dashboard template
   - display list of 10 cheapest flights for longest distance
     * provides a link to buy the ticket
   - implement some kind fo scheduler to update flights every hour
+    * Celery for periodic tasks?
   - environment variables
