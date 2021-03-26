@@ -15,8 +15,10 @@ class Airport(Base):
 class Flight(Base):
     __tablename__ = "flights"
 
-    flight_number = Column(String, primary_key=True, index=True)
-    airline = Column(String)
-    Price = Column(Float)
+    id = Column(Integer, primary_key=True, index=True)
+    price = Column(Float)
     distance = Column(Integer)
     cost = Column(Integer)
+    source = Column(String, ForeignKey('airports.iata_code'))
+    destination = Column(String, ForeignKey('airports.iata_code'))
+    depart_date = Column(String)

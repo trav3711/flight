@@ -91,8 +91,6 @@ def create_flight_list():
     year, month, day = get_now()
     print(f'built airport list with {len(airport_list)} airports')
 
-
-    """This is really inneficient because I'm"""
     for Airport in airport_list.values():
         print(Airport)
 

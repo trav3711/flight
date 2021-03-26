@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <title>Find Your Flights</title>
+  </head>
+  <body>
+      <h1>Flights!</h1>
+      <form action = "http://localhost:8000/dashboard" methdod = "GET">
+        <label for="airport">Choose and Airport: </label>
+        <select name="airport" id="airport">
+            {% for a in airports %}
+            <option>{{ a.iata_code }}</option>
+            {% endfor %}
+        </select>
+        <p><input type = "submit" value = "submit" /></p>
+      </form>
+  </body>
+</html>

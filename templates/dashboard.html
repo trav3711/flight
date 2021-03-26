@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Item Details</title>
+</head>
+<body>
+  <header></header>
+  <table>
+      <tr>
+          <th>Price</th>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Date</th>
+      </tr>
+      {% for f in flights %}
+      <tr>
+          <td>{{f["price"]}}</td>
+          <td>{{f["source"]}}</td>
+          <td>{{f["destination"]}}</td>
+          <td>{{f["depart_date"]}}</td>
+      </tr>
+      {% endfor %}
+  </table>
+</body>
+</html>

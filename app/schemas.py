@@ -20,15 +20,21 @@ class Airport(AirportBase):
 
 class FlightBase(BaseModel):
     flight_number: str
+
+class FlightCreate(FlightBase):
     airline: str
     price: float
     distance: int
-
-class FlightCreate(FlightBase):
-    cost: int
+    src: str
+    dest: str
 
 class Flight(FlightBase):
-    flight_number: str
+    airline: str
+    price: float
+    distance: int
+    cost: int
+    src: str
+    dest: str
 
     class Config:
         orm_mode = True
