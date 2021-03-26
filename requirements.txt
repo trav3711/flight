@@ -2,8 +2,8 @@ numpy
 pandas
 requests
 fastapi
+fastapi-utils
 uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 jinja2
-celery
